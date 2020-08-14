@@ -8,6 +8,8 @@
     <img class="flag-stamp" src="@/assets/images/flag_stamp.png" alt="Flag Stamp">
     <h1 class="title" v-html="page.title "></h1>
     <p class="subtitle" v-html="page.subtitle"></p>
+
+    <div class="pattern"></div>
   </div>
   </div>
 </template>
@@ -81,6 +83,23 @@ export default {
   line-height: 1.25;
 }
 
+#home .pattern {
+  display: block;
+  height: 1rem;
+
+  grid-column: 1 / span 8;
+  grid-row: 6 / span 1;
+
+  margin-top: 4rem;
+  margin-bottom: -4rem;
+
+  background-image: url('~assets/images/pattern.svg');
+  background-repeat: round;
+  background-size: auto 100%;
+
+  align-self: end;
+}
+
 @media screen and (min-width: 768px) {
   #home {
     padding: 0 1rem;
@@ -94,6 +113,11 @@ export default {
 #home .subtitle {
     grid-column: 1 / span 8;
     grid-row: 5 / span 1;
+  }
+
+  #home .pattern {
+      grid-column: 1 / span 4;
+  grid-row: 6 / span 1;
   }
 }
 </style>
