@@ -89,4 +89,9 @@ mark {
   color: white;
 }
 
+
+.container {
+  margin: 0 auto;
+  max-width: 58rem;
+}
 </style>
