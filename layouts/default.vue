@@ -94,4 +94,14 @@ mark {
   margin: 0 auto;
   max-width: 58rem;
 }
+
+.button {
+  padding: 0.75em 1.25em;
+  background: white;
+  color: black;
+  font-size: 1rem;
+  border: none;
+  border-radius: 2px;
+  font-family: inherit;
+}
 </style>

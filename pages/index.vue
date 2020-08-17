@@ -18,16 +18,21 @@
 
   <div class="full-col" id="shop">
     <h2>Shop the merch.</h2>
-    <p>All the profits from our store will be donated to support organizations fighting voter suppresion.</p>
+    <p>All profits from our store will be donated to support organizations fighting voter suppresion.</p>
   </div>
 
   <div class="flex-container">
-    <div class="half-col">
-      <p>In collaboration with MeTime.fm</p>
-      <h3>VoiceMail.love</h3>
+    <div class="half-col" id="voicemail">
+      <p class="text_small">In collaboration with <a href="https://metime.fm" target="_blank">MeTime.fm</a></p>
+      <img width="75%" height="auto" style="margin: -1.5rem auto;" src="https://voicemail.love/_nuxt/img/voicemail-love.256c171.svg" alt="Voicemail.love">
+      <h4>Mail an audio message to a loved&nbsp;one</h4>
+
+      <a href="https://voicemail.love">💌 Record your message →</a>
     </div>
-    <div class="half-col">
-      <h3>Join our livestream</h3>
+    <div id="twitch" class="half-col">
+      <img width="150px" height="auto" src="https://brand.twitch.tv/assets/logos/svg/wordmark-extruded/purple.svg" alt="Twitch Logo"> 
+      <h4>Watch our charity livestream</h4>
+      <p>Friday, August 21st, 7pm - 10pm EST</p>
     </div>
   </div>
   </div>
@@ -130,31 +135,57 @@ export default {
 
 .half-col {
   padding: 1rem;
-  min-height: 50vh;
+  min-height: 66.667vh;
   display: grid;
   place-items: center;
   align-content: center;
+  text-align: center;
   
   background: white;
   
 }
 
 #shop {
-  background: var(--accent);
-  color: white;
-  
+  background: white;
+  /* color: white; */
+
   display: grid;
   place-items: center;
   align-content: center;
-  min-height: 66.6667vh;
+  min-height: 80vh;
   padding: 2rem 0;
 
   text-align: center;
 }
-
+#shop h2 {
+margin-top: 0;
+}
 #shop p {
   max-width: 40rem;
-  
+}
+
+#voicemail {
+  color: white;
+  background: linear-gradient(to top, #5BC7DB, #EA3DF1);
+}
+
+#voicemail a {
+  color: yellow;
+  text-decoration-style: wavy;
+}
+
+#twitch {
+  background: #18181B;
+  color: white;
+
+  background-image: url('https://brand.twitch.tv/assets/images/bg-dot-o.svg');
+  background-size: 60px;
+  background-position: -30px -30px;
+  background-attachment: fixed;
+}
+
+#twitch a {
+  color: #772ce8;
 }
 
 @media screen and (min-width: 768px) {
