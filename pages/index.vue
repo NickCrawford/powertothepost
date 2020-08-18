@@ -24,7 +24,7 @@
   <div class="flex-container">
     <div class="half-col" id="voicemail">
       <p class="text_small">In collaboration with <a href="https://metime.fm" target="_blank">MeTime.fm</a></p>
-      <img width="75%" height="auto" style="margin: -1.5rem auto;" src="https://voicemail.love/_nuxt/img/voicemail-love.256c171.svg" alt="Voicemail.love">
+      <img width="75%" height="auto" style="margin: -1.5rem auto;" src="https://voicemail.love/_nuxt/img/voicemail-love.5c144e7.svg" alt="Voicemail.love">
       <h4>Mail an audio message to a loved&nbsp;one</h4>
 
       <a href="https://voicemail.love">💌 Record your message →</a>
