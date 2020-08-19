@@ -1,4 +1,4 @@
 ---
 title: "Our Postal Service is in danger."
-subtitle: Save the USPS and keep our elections fair! We're raising awareness around voter suppresion as it relates to the U.S. Postal Service.
+subtitle: We're raising awareness and donations for the USPS. Show your support by purchasing merch through our Shopify store and watching our charity stream. All proceeds go toward the ACLU and APWU.
 ---
