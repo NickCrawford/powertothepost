@@ -17,6 +17,7 @@
 
 
   <div class="full-col" id="shop">
+    <img class="shop-bg-image" src="@/assets/images/shop-bg.png" alt="A sticker with a mail truck on it">
     <h2>Shop the merch.</h2>
     <p>All profits from our store will be donated to support organizations fighting voter suppresion.</p>
     <br>
@@ -34,7 +35,7 @@
     <div id="twitch" class="half-col">
       <img width="150px" height="auto" src="https://brand.twitch.tv/assets/logos/svg/wordmark-extruded/purple.svg" alt="Twitch Logo"> 
       <h4>Watch our charity livestream</h4>
-      <p>Sunday, September 6th, 6pm - midnight EST</p>
+      <p>Sunday, September 6th, 6pm - midnight EDT</p>
 
       <!-- <Countdown /> -->
     </div>
@@ -146,10 +147,10 @@ export default {
   text-align: center;
   
   background: white;
-  
 }
 
 #shop {
+  position: relative;
   background: white;
   /* color: white; */
 
@@ -160,12 +161,42 @@ export default {
   padding: 2rem 0;
 
   text-align: center;
+  overflow: hidden;
 }
+
 #shop h2 {
+  position: relative;
 margin-top: 0;
+z-index: 1;
+transform: translate(0,0);
 }
+
+#shop a {
+  position: relative;
+
+z-index: 1;
+transform: translate(0,0);
+}
+
 #shop p {
+  position: relative;
   max-width: 40rem;
+  z-index: 1;
+  transform: translate(0,0);
+}
+
+#shop .shop-bg-image {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  width: 15%;
+  min-width: 10rem;
+
+  transform: rotate(10deg);
+
+  pointer-events: none;
+
+  z-index: 0;
 }
 
 #voicemail {
