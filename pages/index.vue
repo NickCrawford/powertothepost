@@ -169,6 +169,7 @@ export default {
 margin-top: 0;
 z-index: 1;
 transform: translate(0,0);
+background: white;
 }
 
 #shop a {
@@ -188,9 +189,9 @@ transform: translate(0,0);
 #shop .shop-bg-image {
   position: absolute;
   right: 2rem;
-  top: 2rem;
+  bottom: 2rem;
   width: 15%;
-  min-width: 10rem;
+  min-width: 7rem;
 
   transform: rotate(10deg);
 
