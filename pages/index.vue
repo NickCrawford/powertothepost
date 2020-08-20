@@ -5,7 +5,7 @@
       
       <p><a href="https://instagram.com/powertothepost">instagram</a></p>
       <!-- <p><nuxt-link to="/resources">resources</nuxt-link></p> -->
-      <p><a href="https://powertothepost.myshopify.com">shop</a></p>
+      <p><a href="https://shop.powertothepost.com">shop</a></p>
     </div>
     <img class="flag-stamp" src="@/assets/images/flag_stamp.png" alt="Flag Stamp">
     <h1 class="title" v-html="page.title "></h1>
@@ -21,7 +21,7 @@
     <h2>Shop the merch.</h2>
     <p>All profits from our store will be donated to support organizations fighting voter suppresion.</p>
     <br>
-    <a href="https://powertothepost.myshopify.com">Shop now →</a>
+    <a href="https://shop.powertothepost.com">Shop now →</a>
   </div>
 
   <div class="flex-container">
