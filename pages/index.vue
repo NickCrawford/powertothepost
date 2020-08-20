@@ -27,7 +27,7 @@
   <div class="flex-container">
     <div class="half-col" id="voicemail">
       <p class="text_small">In collaboration with <a href="https://metime.fm" target="_blank">MeTime.fm</a></p>
-      <img width="75%" height="auto" style="margin: -1.5rem auto;" src="https://voicemail.love/_nuxt/img/voicemail-love.5c144e7.svg" alt="Voicemail.love">
+      <img width="75%" height="auto" style="margin: -1.5rem auto;" src="https://voicemail.love/_nuxt/img/voicemail-love.347d4fc.svg" alt="Voicemail.love">
       <h4>Mail an audio message to a loved&nbsp;one</h4>
 
       <a href="https://voicemail.love">💌 Record your message →</a>
@@ -201,8 +201,25 @@ transform: translate(0,0);
 }
 
 #voicemail {
+  position: relative;
   color: white;
   background: linear-gradient(to top, #5BC7DB, #EA3DF1);
+}
+
+#voicemail::after {
+  content: "";
+  background: url('https://voicemail.love/_nuxt/img/gif1.b8e4ca9.svg');
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  overflow: hidden;
+  
+  background-size: 33%;
+  pointer-events: none;
+  background-attachment: fixed;
 }
 
 #voicemail a {
