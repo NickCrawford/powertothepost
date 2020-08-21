@@ -1,57 +1,80 @@
 <template>
-<div id="home">
-  <div id="hero" class="container">
-    <div class="sender">
-      
-      <p><a href="https://instagram.com/powertothepost">instagram</a></p>
-      <!-- <p><nuxt-link to="/resources">resources</nuxt-link></p> -->
-      <p><a href="https://shop.powertothepost.com">shop</a></p>
+  <div id="home">
+    <div id="hero" class="container">
+      <div class="sender">
+        <p><a href="https://instagram.com/powertothepost">instagram</a></p>
+        <!-- <p><nuxt-link to="/resources">resources</nuxt-link></p> -->
+        <p><a href="https://powertothepost.com/shop">shop</a></p>
+      </div>
+      <img
+        class="flag-stamp"
+        src="@/assets/images/flag_stamp.png"
+        alt="Flag Stamp"
+      />
+      <h1 class="title" v-html="page.title"></h1>
+      <p class="subtitle" v-html="page.subtitle"></p>
+      <!-- <button>I want to help!</button> -->
+
+      <div class="pattern"></div>
     </div>
-    <img class="flag-stamp" src="@/assets/images/flag_stamp.png" alt="Flag Stamp">
-    <h1 class="title" v-html="page.title "></h1>
-    <p class="subtitle" v-html="page.subtitle"></p>
-    <!-- <button>I want to help!</button> -->
 
-    <div class="pattern"></div>
-  </div>
-
-
-  <div class="full-col" id="shop">
-    <img class="shop-bg-image" src="@/assets/images/shop-bg.png" alt="A sticker with a mail truck on it">
-    <h2>Shop the merch.</h2>
-    <p>All profits from our store will be donated to support organizations fighting voter suppresion.</p>
-    <br>
-    <a href="https://shop.powertothepost.com">Shop now →</a>
-  </div>
-
-  <div class="flex-container">
-    <div class="half-col" id="voicemail">
-      <p class="text_small">In collaboration with <a href="https://metime.fm" target="_blank">MeTime.fm</a></p>
-      <img width="75%" height="auto" style="margin: -1.5rem auto;" src="https://voicemail.love/_nuxt/img/voicemail-love.347d4fc.svg" alt="Voicemail.love">
-      <h4>Mail an audio message to a loved&nbsp;one</h4>
-
-      <a href="https://voicemail.love">💌 Record your message →</a>
+    <div class="full-col" id="shop">
+      <img
+        class="shop-bg-image"
+        src="@/assets/images/shop-bg.png"
+        alt="A sticker with a mail truck on it"
+      />
+      <h2>Shop the merch.</h2>
+      <p>
+        All profits from our store will be donated to support organizations
+        fighting voter suppresion.
+      </p>
+      <br />
+      <a href="https://powertothepost.com/shop">Shop now →</a>
     </div>
-    <div id="twitch" class="half-col">
-      <img width="150px" height="auto" src="https://brand.twitch.tv/assets/logos/svg/wordmark-extruded/purple.svg" alt="Twitch Logo"> 
-      <h4>Watch our charity livestream</h4>
-      <p>Sunday, September 6th, 6pm - midnight EDT</p>
 
-      <!-- <Countdown /> -->
+    <div class="flex-container">
+      <div class="half-col" id="voicemail">
+        <p class="text_small">
+          In collaboration with
+          <a href="https://metime.fm" target="_blank">MeTime.fm</a>
+        </p>
+        <img
+          width="75%"
+          height="auto"
+          style="margin: -1.5rem auto;"
+          src="https://voicemail.love/_nuxt/img/voicemail-love.347d4fc.svg"
+          alt="Voicemail.love"
+        />
+        <h4>Mail an audio message to a loved&nbsp;one</h4>
+
+        <a href="https://voicemail.love">💌 Record your message →</a>
+      </div>
+      <div id="twitch" class="half-col">
+        <img
+          width="150px"
+          height="auto"
+          src="https://brand.twitch.tv/assets/logos/svg/wordmark-extruded/purple.svg"
+          alt="Twitch Logo"
+        />
+        <h4>Watch our charity livestream</h4>
+        <p>Sunday, September 6th, 6pm - midnight EDT</p>
+
+        <!-- <Countdown /> -->
+      </div>
     </div>
-  </div>
   </div>
 </template>
 
 <script>
 export default {
-  async asyncData ({ $content }) {
+  async asyncData({ $content }) {
     const page = await $content('home').fetch()
 
     return {
-      page
+      page,
     }
-  }
+  },
 }
 </script>
 
@@ -59,14 +82,13 @@ export default {
 #home {
   min-height: 100vh;
 
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   background-image: url('~assets/images/whitenoise.png');
   background-repeat: repeat;
   background-size: 600px 600px;
 
   color: #333333;
 }
-
 
 #hero {
   height: 100%;
@@ -78,7 +100,6 @@ export default {
 
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 2rem auto 6rem 1fr auto auto 1fr;
-
 }
 
 #hero .title {
@@ -86,12 +107,10 @@ export default {
   grid-row: 4 / span 1;
 }
 
-
 #hero .subtitle {
   grid-column: 1 / span 11;
   grid-row: 5 / span 1;
 }
-
 
 #hero .flag-stamp {
   display: block;
@@ -145,7 +164,7 @@ export default {
   place-items: center;
   align-content: center;
   text-align: center;
-  
+
   background: white;
 }
 
@@ -166,24 +185,24 @@ export default {
 
 #shop h2 {
   position: relative;
-margin-top: 0;
-z-index: 1;
-transform: translate(0,0);
-background: white;
+  margin-top: 0;
+  z-index: 1;
+  transform: translate(0, 0);
+  background: white;
 }
 
 #shop a {
   position: relative;
 
-z-index: 1;
-transform: translate(0,0);
+  z-index: 1;
+  transform: translate(0, 0);
 }
 
 #shop p {
   position: relative;
   max-width: 40rem;
   z-index: 1;
-  transform: translate(0,0);
+  transform: translate(0, 0);
 }
 
 #shop .shop-bg-image {
@@ -203,11 +222,11 @@ transform: translate(0,0);
 #voicemail {
   position: relative;
   color: white;
-  background: linear-gradient(to top, #5BC7DB, #EA3DF1);
+  background: linear-gradient(to top, #5bc7db, #ea3df1);
 }
 
 #voicemail::after {
-  content: "";
+  content: '';
   background: url('https://voicemail.love/_nuxt/img/gif1.b8e4ca9.svg');
   opacity: 0.2;
   top: 0;
@@ -216,7 +235,7 @@ transform: translate(0,0);
   right: 0;
   position: absolute;
   overflow: hidden;
-  
+
   background-size: 33%;
   pointer-events: none;
   background-attachment: fixed;
@@ -231,7 +250,7 @@ transform: translate(0,0);
 }
 
 #twitch {
-  background: #18181B;
+  background: #18181b;
   color: white;
 
   background-image: url('https://brand.twitch.tv/assets/images/bg-dot-o.svg');
@@ -254,15 +273,14 @@ transform: translate(0,0);
     grid-row: 4 / span 1;
   }
 
-#hero .subtitle {
+  #hero .subtitle {
     grid-column: 1 / span 8;
     grid-row: 5 / span 1;
   }
 
   #hero .pattern {
-      grid-column: 1 / span 4;
-  grid-row: 6 / span 1;
+    grid-column: 1 / span 4;
+    grid-row: 6 / span 1;
   }
 }
-
 </style>
