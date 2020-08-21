@@ -1,0 +1,11 @@
+[[redirects]]
+  from = "http://shop.powertothepost.com/*"
+  to = "https://www.powertothepost.com/shop/:splat"
+  status = 301
+  force = true
+  
+[[redirects]]
+  from = "https://shop.powertothepost.com/*"
+  to = "https://www.powertothepost.com/shop/:splat"
+  status = 301
+  force = true
