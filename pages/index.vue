@@ -60,7 +60,7 @@ export default {
   min-height: 100vh;
 
   background-color: #FAFAFA;
-  background-image: url('http://api.thumbr.it/whitenoise-400x400.png?background=00000000&noise=CCCCCC&density=25&opacity=30');
+  background-image: url('~assets/images/whitenoise.png');
   background-repeat: repeat;
   background-size: 600px 600px;
 
