@@ -21,7 +21,52 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || '',
+        content: '',
+      },
+      {
+        property: 'og:title',
+        content: '📬 Power To The Post',
+      },
+      {
+        property: 'og:description',
+        content: 'Help save the USPS!',
+      },
+      {
+        property: 'og:image',
+        content: 'https://powertothepost.com/social-preview.jpg',
+      },
+      {
+        property: 'og:image:width',
+        content: '1200',
+      },
+      {
+        property: 'og:image:height',
+        content: '630',
+      },
+      {
+        property: 'og:url',
+        content: 'https://powertothepost.com',
+      },
+      {
+        name: 'twitter:card',
+        content: 'summary_large_image',
+      },
+      {
+        name: 'twitter:image',
+        content: 'https://powertothepost.com/social-preview.jpg',
+      },
+      {
+        property: 'og:site_name',
+        content: '📬 Power To The Post',
+      },
+      {
+        name: 'twitter:image:alt',
+        content:
+          'Power To The Post - Help us Save the USPS by purchasing merch through our Shopify store. All proceeds support the USPS, APWU, and ACLU.',
+      },
+      {
+        name: 'twitter:site',
+        content: '@MeTimefm',
       },
     ],
     link: [
