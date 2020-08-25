@@ -43,7 +43,7 @@
           width="75%"
           height="auto"
           style="margin: -1.5rem auto;"
-          src="https://voicemail.love/_nuxt/img/voicemail-love.347d4fc.svg"
+          src="https://voicemail.love/voicemail-love.svg"
           alt="Voicemail.love"
         />
         <h4>Mail an audio message to a loved&nbsp;one</h4>
@@ -59,10 +59,14 @@
         />
         <h4>Watch our charity livestream</h4>
         <p>Sunday, September 6th, 6pm - midnight EDT</p>
+        <br />
+        <a href="https://www.twitch.tv/powertothepost">Go to Twitch →</a>
 
         <!-- <Countdown /> -->
       </div>
     </div>
+
+    <!-- <Mailbox /> -->
   </div>
 </template>
 
