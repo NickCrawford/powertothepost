@@ -26,8 +26,8 @@
       />
       <h2>Shop the merch.</h2>
       <p>
-        All profits from our store will be donated to support organizations
-        fighting voter suppresion.
+        Created with ♥️ for the USPS. All profits from our store will be donated
+        to support the American Postal Workers Union and ACLU.
       </p>
       <br />
       <a href="https://powertothepost.com/shop">Shop now →</a>
@@ -65,8 +65,6 @@
         <!-- <Countdown /> -->
       </div>
     </div>
-
-    <!-- <Mailbox /> -->
   </div>
 </template>
 

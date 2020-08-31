@@ -4,7 +4,10 @@
     <br />
     <div class="container">
       <h3>Power To The Post Store</h3>
-      <p>Created with ♥️ for the USPS</p>
+      <p>
+        Created with ♥️ for the USPS. All profits from our store will be donated
+        to support the American Postal Workers Union and ACLU.
+      </p>
       <!-- <p>
         All proceeds support the USPS, ACLU and AWPU. Learn more about our
         efforts by reading our
