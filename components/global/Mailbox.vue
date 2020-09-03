@@ -90,7 +90,7 @@ export default {
       error: null,
       secretLink: null, //https://powertothepost.com/message/1234
       message: '',
-      name: 'Nick', //optional
+      name: '', //optional
       placeholders: [
         `Hey, you're cute. Save the USPS with me?`,
         `Saving the USPS is important to me and I hope you can help out.`,
