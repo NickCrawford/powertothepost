@@ -27,7 +27,14 @@
         <br />
         <br />
 
-        <input type="text" readonly v-model="secretLink" id="secret-link" />
+        <label for="secretLink">Share this link:</label>
+        <input
+          type="text"
+          name="secretLink"
+          readonly
+          v-model="secretLink"
+          id="secret-link"
+        />
       </div>
       <div v-else>
         <form @submit.prevent="getShareLink()">
@@ -53,6 +60,7 @@
           <br />
           <br />
 
+          <p v-if="error" style="color: var(--primary);">{{ error }}</p>
           <button
             class="button primary"
             type="submit"
@@ -79,6 +87,7 @@ export default {
     return {
       isActive: false,
       isLoading: false,
+      error: null,
       secretLink: null, //https://powertothepost.com/message/1234
       message: '',
       name: 'Nick', //optional
@@ -95,14 +104,41 @@ export default {
       this.isActive = !this.isActive
     },
 
-    getShareLink() {
+    async getShareLink() {
       if (this.isLoading) return
 
       this.isLoading = true
 
-      setTimeout(() => {
-        this.secretLink = 'https://powertothepost.com/message/1234'
-      }, 300)
+      try {
+        let doc = await this.$fireStore
+          .collection('messages')
+          .add({ message: this.message, name: this.name, isOpened: false })
+
+        console.log(doc)
+
+        this.secretLink = 'https://powertothepost.com/message/' + doc.id
+
+        this.$nextTick(() => {
+          this.copyText()
+        })
+      } catch (error) {
+        this.error = error.message || error
+        console.error(error)
+      } finally {
+        this.loading = false
+      }
+    },
+
+    copyText() {
+      /* Get the text field */
+      var copyText = document.getElementById('secret-link')
+
+      /* Select the text field */
+      copyText.select()
+      copyText.setSelectionRange(0, 99999) /*For mobile devices*/
+
+      /* Copy the text inside the text field */
+      document.execCommand('copy')
     },
   },
 }

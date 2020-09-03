@@ -120,6 +120,23 @@ export default {
     '@nuxtjs/axios',
     // Doc: https://github.com/nuxt/content
     '@nuxt/content',
+    [
+      '@nuxtjs/firebase',
+      {
+        config: {
+          apiKey: 'AIzaSyBacjU6xqsZ_SXJRn_9FVU996BBGYnGoBc',
+          authDomain: 'powertothepost-f5cac.firebaseapp.com',
+          databaseURL: 'https://powertothepost-f5cac.firebaseio.com',
+          projectId: 'powertothepost-f5cac',
+          storageBucket: 'powertothepost-f5cac.appspot.com',
+          messagingSenderId: '290575860568',
+          appId: '1:290575860568:web:47103ebb9f22c1ae4f5b2d',
+        },
+        services: {
+          firestore: true, // Just as example. Can be any other service.
+        },
+      },
+    ],
   ],
   /*
    ** Axios module configuration
