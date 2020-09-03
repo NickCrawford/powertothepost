@@ -19,11 +19,11 @@
     </div>
 
     <div class="full-col" id="shop">
-      <img
-        class="shop-bg-image"
+      <!-- <img
+        class="shop-bg-image img-1"
         src="@/assets/images/shop-bg.png"
-        alt="A sticker with a mail truck on it"
-      />
+      /> -->
+
       <h2>Shop the merch.</h2>
       <p>
         Created with ♥️ for the USPS. All profits from our store will be donated
@@ -183,6 +183,20 @@ export default {
 
   text-align: center;
   overflow: hidden;
+
+  background-image: url('~assets/images/shop-bg.jpg');
+  background-size: cover;
+  background-repeat: none;
+  background-position: center center;
+}
+
+@media screen and (max-width: 750px) {
+  #shop {
+    background-image: url('~assets/images/shop-bg-portrait.jpg');
+    background-size: cover;
+    background-repeat: none;
+    background-position: center center;
+  }
 }
 
 #shop h2 {
@@ -205,6 +219,8 @@ export default {
   max-width: 40rem;
   z-index: 1;
   transform: translate(0, 0);
+
+  background: white;
 }
 
 #shop .shop-bg-image {
