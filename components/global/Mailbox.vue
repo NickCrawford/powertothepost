@@ -114,6 +114,10 @@ export default {
           .collection('messages')
           .add({ message: this.message, name: this.name, isOpened: false })
 
+        await this.$axios.$post(
+          'https://api.netlify.com/build_hooks/5f5072a3776a6475fc1d2749',
+          {}
+        )
         console.log(doc)
 
         this.secretLink = 'https://powertothepost.com/message/' + doc.id

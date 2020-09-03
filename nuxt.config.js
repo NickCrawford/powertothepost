@@ -1,3 +1,5 @@
+import axios from 'axios'
+
 export default {
   /*
    ** Nuxt rendering mode
@@ -155,4 +157,22 @@ export default {
    ** See https://nuxtjs.org/api/configuration-build/
    */
   build: {},
+
+  generate: {
+    // routes: ['']
+    routes() {
+      return axios
+        .get(
+          'https://firestore.googleapis.com/v1/projects/powertothepost-f5cac/databases/(default)/documents/messages'
+        )
+        .then((res) => {
+          return res.data.documents.map((doc) => {
+            let pieces = doc.name.split('/')
+            console.log('generating ' + pieces[pieces.length - 1])
+
+            return '/message/' + pieces[pieces.length - 1]
+          })
+        })
+    },
+  },
 }
