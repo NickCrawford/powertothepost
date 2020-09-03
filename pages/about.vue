@@ -1,7 +1,7 @@
 <template>
   <div>
     <header class="container">
-    <nuxt-link to="/">⇠ powertothepost.com </nuxt-link>
+      <nuxt-link to="/">⇠ powertothepost.com </nuxt-link>
     </header>
     <article class="container">
       <nuxt-content :document="page" />
@@ -24,9 +24,10 @@ export default {
 <style scoped>
 article {
   margin-top: 2rem;
+  padding: 0 0.75rem 4rem;
 }
 
 header {
-  padding: 2rem 0 ;
+  padding: 2rem 0.75rem;
 }
 </style>

@@ -3,8 +3,10 @@
     <div id="hero" class="container">
       <div class="sender">
         <p><a href="https://instagram.com/powertothepost">instagram</a></p>
-        <!-- <p><nuxt-link to="/resources">resources</nuxt-link></p> -->
+
         <p><a href="https://powertothepost.com/shop">shop</a></p>
+
+        <p><nuxt-link to="/about">about</nuxt-link></p>
       </div>
       <img
         class="flag-stamp"
@@ -153,10 +155,14 @@ export default {
 
 .flex-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   grid-auto-rows: auto;
   grid-gap: 0.75rem;
+  box-sizing: border-box;
   padding: 0.75rem;
+  width: 100%;
+
+  overflow-x: hidden;
 }
 
 .half-col {

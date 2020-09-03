@@ -1,18 +1,21 @@
 <template>
   <div>
     <Nuxt />
+
+    <Mailbox />
   </div>
 </template>
 
 <style>
 :root {
-  --primary: #C83B2B;
-  --accent: #382BDE;
+  --primary: #c83b2b;
+  --accent: #382bde;
 }
 
 html {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
@@ -21,15 +24,10 @@ html {
 }
 
 body {
-    font-family:
-    "SFMono-Regular",
-    Consolas,
-    "Liberation Mono",
-    Menlo,
-    Courier,
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier,
     monospace;
 
-    line-height: 1.25;
+  line-height: 1.25;
 }
 
 *,
@@ -39,7 +37,11 @@ body {
   margin: 0;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: tenon, sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -52,15 +54,26 @@ h1 {
   font-size: 4.209em;
 }
 
-h2 {font-size: 3.157em;}
+h2 {
+  font-size: 3.157em;
+}
 
-h3 {font-size: 2.369em;}
+h3 {
+  font-size: 2.369em;
+}
 
-h4 {font-size: 1.777em;}
+h4 {
+  font-size: 1.777em;
+}
 
-h5 {font-size: 1.333em;}
+h5 {
+  font-size: 1.333em;
+}
 
-small, .text_small {font-size: 0.75em;}
+small,
+.text_small {
+  font-size: 0.75em;
+}
 
 /* Fluid Typescale */
 html {
@@ -89,7 +102,6 @@ mark {
   color: white;
 }
 
-
 .container {
   margin: 0 auto;
   max-width: 58rem;
@@ -103,5 +115,14 @@ mark {
   border: none;
   border-radius: 2px;
   font-family: inherit;
+
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.16);
+
+  cursor: pointer;
+}
+
+.button.primary {
+  background: var(--accent);
+  color: white;
 }
 </style>
