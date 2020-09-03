@@ -111,7 +111,7 @@ export default {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: [],
+  buildModules: ['@nuxtjs/netlify-files'],
   /*
    ** Nuxt.js modules
    */

@@ -21,7 +21,7 @@
     </div>
 
     <div style="text-align: center;">
-      <p>The USPS is in danger! Join our effort to save our public good.</p>
+      <p>The USPS is in danger! Join in the effort to save our public good.</p>
       <br />
       <nuxt-link tag="button" to="/" class="button primary"
         >I want to help! →</nuxt-link
