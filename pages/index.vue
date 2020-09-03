@@ -30,7 +30,7 @@
         to support the American Postal Workers Union and ACLU.
       </p>
       <br />
-      <a href="https://powertothepost.com/shop">Shop now →</a>
+      <nuxt-link tag="a" to="/shop">Shop now →</nuxt-link>
     </div>
 
     <div class="flex-container">

@@ -8,6 +8,10 @@
         Created with ♥️ for the USPS. All profits from our store will be donated
         to support the American Postal Workers Union and ACLU.
       </p>
+      <br />
+
+      <Donations />
+
       <!-- <p>
         All proceeds support the USPS, ACLU and AWPU. Learn more about our
         efforts by reading our
