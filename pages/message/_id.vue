@@ -43,6 +43,51 @@ export default {
           content:
             'Visit Power To The Post to open your message and help save the USPS.',
         },
+        {
+          property: 'og:title',
+          content: this.name + ' wrote you a message on Power To The Post',
+        },
+        {
+          property: 'og:description',
+          content:
+            'Visit Power To The Post to open your message and help save the USPS.',
+        },
+        {
+          property: 'og:image',
+          content: 'https://powertothepost.com/social-preview-message.jpg',
+        },
+        {
+          property: 'og:image:width',
+          content: '1200',
+        },
+        {
+          property: 'og:image:height',
+          content: '630',
+        },
+        {
+          property: 'og:url',
+          content: 'https://powertothepost.com',
+        },
+        {
+          name: 'twitter:card',
+          content: 'summary_large_image',
+        },
+        {
+          name: 'twitter:image',
+          content: 'https://powertothepost.com/social-preview-message.jpg',
+        },
+        {
+          property: 'og:site_name',
+          content: this.name + ' wrote you a message on Power To The Post',
+        },
+        {
+          name: 'twitter:image:alt',
+          content: "You've got mail!",
+        },
+        {
+          name: 'twitter:site',
+          content: '@MeTimefm',
+        },
       ],
     }
   },
