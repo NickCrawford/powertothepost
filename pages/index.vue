@@ -60,9 +60,9 @@
           alt="Twitch Logo"
         />
         <h4>Watch our charity livestream</h4>
-        <p>Sunday, September 6th, 6pm - midnight EDT</p>
+        <p> <s> Sunday, September 6th, 6pm - midnight EDT </s>  Cancelled</p>
         <br />
-        <a href="https://www.twitch.tv/powertothepost">Go to Twitch →</a>
+       
 
         <!-- <Countdown /> -->
       </div>
